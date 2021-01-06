@@ -13,7 +13,7 @@ Annotation은 data labeling하는 작업을 말하는데, 이 작업이 expensiv
 1. 첫번째 실험은 uniform label noise.
 
     기존 correct label은 놔두고, uniform 분포를 따르는 label noise를 생성한 케이스. 예를 들면, correct label을 가진 원래 데이터 1개가 있을 때 각 다른 label을 갖는 6개의 데이터를 생성하였다.        
-    ![figure1](https://github.com/jsj267/paper-review/blob/master/image/1-f1.JPG?raw=true)![figure2](https://github.com/jsj267/paper-review/blob/master/image/1-f2.JPG?raw=true)![figure3](https://github.com/jsj267/paper-review/blob/master/image/1-f3.JPG?raw=true)          
+    ![figure1](https://github.com/jsj267/Article-Review/blob/master/image/Deep%20Learning%20is%20Robust%20to%20Massive%20Label%20Noise/1-f1.JPG)![figure2](https://github.com/jsj267/paper-review/blob/master/image/1-f2.JPG?raw=true)![figure3](https://github.com/jsj267/paper-review/blob/master/image/1-f3.JPG?raw=true)          
     세가지 데이터 모두 괜찮은 예측정확도를 보인다. 아무래도 task의 난이도가 높아질수록 label noise의 비율(=α)이 높아지면 정확도가 떨어지긴 하지만 noise비가 100인 상황(α=100)에서 90% 이상의 정확도를 보여주고 있다. 또, MNIST와 CIFAR 실험 결과를 보면 더 큰(논문에서 larger라고 표현되어있는데, 한국말로 어떻게 표현해야할지 모르겠다. 두꺼운? 촘촘한?) 신경망 구조가 noise에 robust하다는 것을 볼 수 있었다. Perceptron < MLP < Conv4 순으로 noise 비율이 높아질수록 정확도가 천천히 떨어진다.
 
 2. 두번째 실험은 Structured label noise.
